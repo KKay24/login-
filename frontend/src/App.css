@@ -1,0 +1,182 @@
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  height: 100vh;
+  /* rgb(83, 158, 173) */
+  background: linear-gradient(45deg, #d2001a, #7462ff, rgb(83, 158, 173), #23d5ab);
+  background-size: 300% 300% ;
+  animation: color 8s ease-in-out infinite;
+  font-family: Arial, sans-serif;
+}
+@keyframes color {
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+
+  .signup-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    color: white;
+  }
+
+  .pulse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5.5vh;
+    width:100%;
+    color: white;
+    margin-top: 50px;
+  }
+
+
+  h1 {
+    position: relative;
+    color: white;
+    font-size: medium;
+  }
+
+  h1::before 
+  {
+    content: attr(data-text);
+    position: absolute;
+    color: #222;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: animate 5s linear;
+  }
+  @keyframes animate
+  {
+    0%, 10%, 100% 
+    {
+      width: 0;
+    }
+    70%, 100%
+    {
+      width: 100%;
+    }
+  }
+
+  .details-login {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    background: white;
+    box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+  }
+
+  .flex-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+  }
+
+  .user-container {
+    margin-top: 20px;
+    padding-left: 2rem;
+    padding-right: 3rem;
+    width: 25rem;
+  }
+
+  .login-with {
+    margin-top: 20px;
+    cursor: default;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .signup-btn {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: 30vh;
+    gap: 40px;
+    width: 400px;
+  }
+
+  .login-signin-container {
+    display: flex;
+    align-items: center;
+    width: 20rem;
+    gap: 5px;
+    cursor: default;
+  }
+
+  .signup-btn1 {
+    background: linear-gradient(45deg, #d2001a, #7462ff, rgb(83, 158, 173), #23d5ab);
+    background-size: 300% 300% ;
+    animation: color 8s ease-in-out infinite;
+    font-family: Arial, sans-serif;
+  }
+  @keyframes color {
+    0%{
+      background-position: 0 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0 50%;
+    }
+  }
+
+  .signup-btn2 {
+    cursor: pointer;
+    border-bottom: dotted;
+  }
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+input {
+    background-color: transparent;
+   border: none;
+   border: none;
+   outline: none;
+   height: 38px;
+   width: 388px;
+   cursor: pointer;
+}
+
+input :hover {
+    background-color: transparent;
+   border: none;
+   border: none;
+   outline: none;
+   height: 38px;
+   width: 388px;
+   cursor: pointer;
+}
+
+
